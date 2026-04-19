@@ -223,7 +223,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - _Requirements: 4.2, 4.3, 24.1, 24.4_
 
 - [ ] 11. Result Normalizer and Webhook Dispatcher
-  - [~] 11.1 Implement `ResultNormalizer`
+  - [x] 11.1 Implement `ResultNormalizer`
     - Create `com.tengus.result.ResultNormalizer` class
     - Implement `normalize` that transforms `ScrapeResult` into `NormalizedScrapeResult` with source URL, site ID, job ID, extraction timestamp, scraper version, and normalized data payload
     - Implement `validate` that checks normalized result against the common schema

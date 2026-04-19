@@ -8,7 +8,7 @@
   },
   "then": {
     "type": "runCommand",
-    "command": "git add -A && git commit -m \"Complete spec task\" && git push"
+    "command": "git add -A && git diff --cached --quiet || (git commit -m \"Complete spec task\" && git push)"
   },
   "workspaceFolderName": "TenguS",
   "shortName": "git-push-on-task"
