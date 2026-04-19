@@ -265,7 +265,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test metric JSON round-trip serialization
     - _Requirements: 19.1, 19.2, 19.3, 19.6, 19.7_
 
-- [~] 13. Checkpoint — Ensure all tests pass
+- [x] 13. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 14. Scraper Controller and RabbitMQ integration
