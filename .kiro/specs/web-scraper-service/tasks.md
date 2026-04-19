@@ -136,7 +136,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement `interActionDelay` with configurable range (500–3000ms)
     - _Requirements: 11.1, 11.2, 11.3, 11.4, 11.5_
 
-  - [~] 7.2 Implement `SessionManager`
+  - [x] 7.2 Implement `SessionManager`
     - Create `com.tengus.session.SessionManager` class
     - Implement `createSession` that creates an isolated Playwright BrowserContext per job with empty cookie jar
     - Implement `destroySession` that closes context and discards all cookies/state
