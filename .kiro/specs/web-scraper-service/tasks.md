@@ -331,7 +331,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Verify rate limiter logs delays at DEBUG, proxy health changes at WARN, circuit breaker transitions at WARN, errors with structured JSON
     - _Requirements: 18.1, 18.2, 18.3, 18.4, 18.5_
 
-- [-] 17. Final checkpoint — Ensure all tests pass
+- [x] 17. Final checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
