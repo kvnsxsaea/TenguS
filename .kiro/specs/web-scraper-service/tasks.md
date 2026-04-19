@@ -310,7 +310,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - _Requirements: 2.2, 2.4, 3.2, 3.3, 15.1, 15.4, 20.3, 20.4, 20.5, 20.6, 21.3, 23.1, 23.2_
 
 - [ ] 15. Application entry point and wiring
-  - [~] 15.1 Implement `main` function and dependency wiring
+  - [x] 15.1 Implement `main` function and dependency wiring
     - Create `com.tengus.Application` with `main` function
     - Load config via `ConfigLoader`
     - Instantiate all components with proper dependency injection order
