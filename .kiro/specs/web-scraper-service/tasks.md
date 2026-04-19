@@ -215,7 +215,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement `siteId` and `extract` method as a reference implementation
     - _Requirements: 4.5, 5.1_
 
-  - [~] 10.5 Write unit tests for `ScraperRegistry` and `ScraperFactory`
+  - [x] 10.5 Write unit tests for `ScraperRegistry` and `ScraperFactory`
     - Test auto-discovery finds scrapers in target package
     - Test duplicate site ID detection fails startup
     - Test factory throws on unregistered site ID
