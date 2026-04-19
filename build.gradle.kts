@@ -42,6 +42,7 @@ dependencies {
     // Testing
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
     testImplementation("io.kotest:kotest-property:$kotestVersion")
+    testImplementation("io.mockk:mockk:1.13.13")
 }
 
 kotlin {

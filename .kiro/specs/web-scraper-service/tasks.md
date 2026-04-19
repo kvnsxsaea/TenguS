@@ -186,7 +186,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 10. Base Scraper and Scraper Registry
-  - [~] 10.1 Implement `BaseScraper` abstract class
+  - [x] 10.1 Implement `BaseScraper` abstract class
     - Create `com.tengus.scraper.BaseScraper` abstract class
     - Define abstract `siteId` property and abstract `extract(page, job)` method
     - Implement `execute(job)` template method lifecycle: create browser context → apply stealth (via StealthManager) → session warmup (via SessionWarmupEngine) → invoke `extract` → collect result → close browser context
