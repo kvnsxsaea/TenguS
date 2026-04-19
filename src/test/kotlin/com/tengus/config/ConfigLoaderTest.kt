@@ -254,6 +254,67 @@ warmup:"""
         ex.message shouldContain "scanPackage"
         ex.message shouldContain "blank"
     }
+
+    test("fails when userAgent agents list is empty") {
+        val config = VALID_CONFIG.replace(
+            """agents:
+    - userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      weight: 1.0
+      browserFamily: Chrome
+      browserVersion: "120.0"""",
+            "agents: []"
+        )
+        val path = writeYaml(config)
+
+        val ex = shouldThrow<ConfigurationException> {
+            loader.load(path)
+        }
+        ex.message shouldContain "agents"
+        ex.message shouldContain "not be empty"
+    }
+
+    test("fails when stealth timezones list is empty") {
+        val config = VALID_CONFIG.replace(
+            """timezones:
+    - America/New_York""",
+            "timezones: []"
+        )
+        val path = writeYaml(config)
+
+        val ex = shouldThrow<ConfigurationException> {
+            loader.load(path)
+        }
+        ex.message shouldContain "timezones"
+        ex.message shouldContain "not be empty"
+    }
+
+    test("fails when warmup urls list is empty") {
+        val config = VALID_CONFIG.replace(
+            """urls:
+    - https://www.google.com""",
+            "urls: []"
+        )
+        val path = writeYaml(config)
+
+        val ex = shouldThrow<ConfigurationException> {
+            loader.load(path)
+        }
+        ex.message shouldContain "urls"
+        ex.message shouldContain "not be empty"
+    }
+
+    test("collects multiple validation errors at once") {
+        val config = VALID_CONFIG
+            .replace("defaultMaxRequests: 10", "defaultMaxRequests: -1")
+            .replace("defaultFailureThreshold: 5", "defaultFailureThreshold: -1")
+        val path = writeYaml(config)
+
+        val ex = shouldThrow<ConfigurationException> {
+            loader.load(path)
+        }
+        ex.message shouldContain "defaultMaxRequests"
+        ex.message shouldContain "defaultFailureThreshold"
+    }
 })
 
 private val VALID_CONFIG = """

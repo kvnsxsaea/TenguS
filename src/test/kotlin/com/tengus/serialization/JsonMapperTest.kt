@@ -3,6 +3,12 @@ package com.tengus.serialization
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.tengus.metrics.AverageDurationMetric
+import com.tengus.metrics.FailureMetric
+import com.tengus.metrics.ProxyHealthMetric
+import com.tengus.metrics.QueueDepthMetric
+import com.tengus.metrics.RollingRateMetric
+import com.tengus.metrics.SuccessMetric
 import com.tengus.model.ScrapeJob
 import com.tengus.model.ScrapeResult
 import io.kotest.core.spec.style.FunSpec
@@ -71,6 +77,77 @@ class JsonMapperTest : FunSpec({
         )
         val json = mapper.writeValueAsString(original)
         val deserialized: ScrapeResult = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("SuccessMetric round-trip serialization") {
+        val original = SuccessMetric(
+            jobId = "sm-1",
+            siteId = "example",
+            durationMs = 1234L,
+            timestamp = Instant.parse("2024-06-15T10:30:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: SuccessMetric = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("FailureMetric round-trip serialization") {
+        val original = FailureMetric(
+            jobId = "fm-1",
+            siteId = "example",
+            failureReason = "Connection timeout",
+            retryCount = 3,
+            timestamp = Instant.parse("2024-06-15T11:00:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: FailureMetric = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("RollingRateMetric round-trip serialization") {
+        val original = RollingRateMetric(
+            siteId = "example",
+            successRate = 0.95,
+            failureRate = 0.05,
+            timestamp = Instant.parse("2024-06-15T12:00:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: RollingRateMetric = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("QueueDepthMetric round-trip serialization") {
+        val original = QueueDepthMetric(
+            jobsQueueDepth = 42,
+            dlqDepth = 3,
+            timestamp = Instant.parse("2024-06-15T13:00:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: QueueDepthMetric = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("AverageDurationMetric round-trip serialization") {
+        val original = AverageDurationMetric(
+            siteId = "example",
+            averageDurationMs = 2345.67,
+            timestamp = Instant.parse("2024-06-15T14:00:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: AverageDurationMetric = mapper.readValue(json)
+        deserialized shouldBe original
+    }
+
+    test("ProxyHealthMetric round-trip serialization") {
+        val original = ProxyHealthMetric(
+            domain = "example.com",
+            healthyCount = 8,
+            blockedCount = 2,
+            timestamp = Instant.parse("2024-06-15T15:00:00Z")
+        )
+        val json = mapper.writeValueAsString(original)
+        val deserialized: ProxyHealthMetric = mapper.readValue(json)
         deserialized shouldBe original
     }
 })

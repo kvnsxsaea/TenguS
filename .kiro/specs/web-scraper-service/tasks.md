@@ -37,7 +37,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create `com.tengus.serialization.JsonMapper` singleton with `JavaTimeModule`, `FAIL_ON_UNKNOWN_PROPERTIES = false`, `WRITE_DATES_AS_TIMESTAMPS = false`, and Kotlin module registered
     - _Requirements: 2.1, 2.2, 2.3, 14.1, 14.3_
 
-  - [~] 1.7 Write unit tests for configuration loading and data model serialization
+  - [x] 1.7 Write unit tests for configuration loading and data model serialization
     - Test YAML config loading with valid and invalid configs
     - Test `ScrapeJob` JSON round-trip serialization/deserialization
     - Test `ScrapeResult` JSON round-trip serialization/deserialization
@@ -45,7 +45,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test config validation rejects missing required fields with descriptive errors
     - _Requirements: 2.3, 14.3, 16.3, 16.4, 19.7_
 
-  - [~] 1.8 Create sample `application.yml` configuration file
+  - [-] 1.8 Create sample `application.yml` configuration file
     - Create `src/main/resources/application.yml` with all configuration sections and sensible defaults
     - _Requirements: 16.1, 16.2_
 
