@@ -230,7 +230,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log validation errors with job ID and reject invalid results
     - _Requirements: 25.1, 25.2, 25.3, 25.4, 25.5, 25.6_
 
-  - [~] 11.2 Implement `WebhookDispatcher`
+  - [x] 11.2 Implement `WebhookDispatcher`
     - Create `com.tengus.webhook.WebhookDispatcher` class
     - Implement `dispatch` that sends HTTP POST with JSON body to callback URL
     - Implement `dispatchFailure` for failure notifications
