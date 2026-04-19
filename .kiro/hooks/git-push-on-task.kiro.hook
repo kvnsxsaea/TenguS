@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Git Push on Task Complete",
+  "description": "Automatically stages, commits, and pushes all changes after a spec task is marked as completed.",
+  "version": "1",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git add -A && git commit -m \"Complete spec task\" && git push"
+  },
+  "workspaceFolderName": "TenguS",
+  "shortName": "git-push-on-task"
+}
