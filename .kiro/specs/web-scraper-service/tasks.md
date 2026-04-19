@@ -159,7 +159,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test warmup timeout skip behavior
     - _Requirements: 11.1, 11.2, 11.3, 11.5, 13.4, 28.4, 28.5, 28.6_
 
-- [ ] 8. Circuit Breaker Manager and Retry Policy Resolver
+- [x] 8. Circuit Breaker Manager and Retry Policy Resolver
   - [x] 8.1 Implement `CircuitBreakerManager`
     - Create `com.tengus.resilience.CircuitBreakerManager` class with `CircuitState` enum (CLOSED, OPEN, HALF_OPEN)
     - Track consecutive failure count per domain
