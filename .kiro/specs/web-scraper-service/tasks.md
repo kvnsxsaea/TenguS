@@ -278,7 +278,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log warning when extracted data payload is empty
     - _Requirements: 2.2, 2.4, 3.2, 3.4, 4.1, 12.3, 14.4, 18.1_
 
-  - [~] 14.2 Implement `ScraperController` — retry, DLQ, and circuit breaker integration
+  - [x] 14.2 Implement `ScraperController` — retry, DLQ, and circuit breaker integration
     - On retryable errors (network timeout, proxy failure, HTTP 429/5xx): re-enqueue with incremented retry count using resolved retry strategy (site-specific or global fallback)
     - On max retries exceeded: route to DLQ preserving original payload, failure reason, retry count, and UTC timestamp
     - On unrecoverable errors: nack message and route to DLQ
