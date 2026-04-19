@@ -125,7 +125,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
 - [x] 6. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 7. Human Behavior Engine, Session Manager, and Session Warmup Engine
+- [x] 7. Human Behavior Engine, Session Manager, and Session Warmup Engine
   - [x] 7.1 Implement `HumanBehaviorEngine`
     - Create `com.tengus.behavior.HumanBehaviorEngine` class
     - Implement `randomDelay` with configurable min/max range (default 1–5s for initial delay)
