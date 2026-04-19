@@ -152,7 +152,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Complete all warmup before stealth config and extraction lifecycle begins
     - _Requirements: 28.1, 28.2, 28.3, 28.4, 28.5, 28.6, 28.7_
 
-  - [~] 7.4 Write unit tests for `HumanBehaviorEngine`, `SessionManager`, and `SessionWarmupEngine`
+  - [x] 7.4 Write unit tests for `HumanBehaviorEngine`, `SessionManager`, and `SessionWarmupEngine`
     - Test delay ranges are within configured bounds
     - Test session isolation (no shared state between jobs)
     - Test warmup page selection respects min/max count
