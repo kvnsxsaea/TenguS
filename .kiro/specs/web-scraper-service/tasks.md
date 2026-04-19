@@ -79,7 +79,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test blocking behavior when rate exceeded
     - _Requirements: 12.1, 12.2, 12.4, 12.5_
 
-- [ ] 4. Proxy Pool and Proxy Health Monitor
+- [x] 4. Proxy Pool and Proxy Health Monitor
   - [x] 4.1 Implement `ProxyHealthMonitor`
     - Create `com.tengus.proxy.ProxyHealthMonitor` class
     - Track success/failure counts per proxy per domain over sliding window
