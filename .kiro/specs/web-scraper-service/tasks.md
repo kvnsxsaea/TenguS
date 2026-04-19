@@ -14,7 +14,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create a `gradle.properties` with Kotlin JVM target
     - _Requirements: 16.1_
 
-  - [~] 1.2 Implement all configuration data models
+  - [x] 1.2 Implement all configuration data models
     - Create `com.tengus.config` package with all config data classes: `AppConfig`, `RabbitMqConfig`, `RateLimitConfig`, `DomainRateLimit`, `ProxyConfig`, `ProxyHealthConfig`, `UserAgentConfig`, `RetryConfig`, `HumanBehaviorConfig`, `StealthConfig`, `CircuitBreakerConfig`, `DomainCircuitBreakerConfig`, `WarmupConfig`, `WebhookConfig`, `MetricsConfig`, `ShutdownConfig`, `ScraperRegistryConfig`
     - Implement `ConfigLoader` class that reads a YAML file via SnakeYAML and maps it to `AppConfig`
     - Implement startup validation: fail with descriptive error if required config keys are missing or invalid

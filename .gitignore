@@ -1,0 +1,13 @@
+.gradle/
+build/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+local.properties
