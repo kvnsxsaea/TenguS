@@ -203,7 +203,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log count and list of registered site identifiers at INFO level
     - _Requirements: 24.1, 24.2, 24.3, 24.4, 24.5_
 
-  - [~] 10.3 Implement `ScraperFactory`
+  - [x] 10.3 Implement `ScraperFactory`
     - Create `com.tengus.scraper.ScraperFactory` class
     - Delegate all lookups to `ScraperRegistry` (no hardcoded mappings)
     - Implement `createScraper(siteId)` that instantiates the scraper with all injected dependencies (StealthManager, ProxyPool, UserAgentRotator, SessionManager, HumanBehaviorEngine, SessionWarmupEngine)
