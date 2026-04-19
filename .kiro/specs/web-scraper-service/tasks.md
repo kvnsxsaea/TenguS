@@ -49,7 +49,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create `src/main/resources/application.yml` with all configuration sections and sensible defaults
     - _Requirements: 16.1, 16.2_
 
-- [~] 2. Checkpoint — Ensure all tests pass
+- [x] 2. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 3. User Agent Rotator and Rate Limiter
