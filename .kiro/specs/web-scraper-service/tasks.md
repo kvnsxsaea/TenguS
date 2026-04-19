@@ -45,7 +45,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test config validation rejects missing required fields with descriptive errors
     - _Requirements: 2.3, 14.3, 16.3, 16.4, 19.7_
 
-  - [-] 1.8 Create sample `application.yml` configuration file
+  - [x] 1.8 Create sample `application.yml` configuration file
     - Create `src/main/resources/application.yml` with all configuration sections and sensible defaults
     - _Requirements: 16.1, 16.2_
 

@@ -1,0 +1,157 @@
+# =============================================================================
+# TenguS Web Scraper Service — Application Configuration
+# =============================================================================
+
+# --- RabbitMQ connection and queue names ---
+rabbitmq:
+  host: "localhost"
+  port: 5672
+  username: "guest"
+  password: "guest"
+  jobsQueue: "tengus.scrape.jobs"
+  resultsQueue: "tengus.scrape.results"
+  dlqQueue: "tengus.scrape.dlq"
+
+# --- Per-domain rate limiting (sliding window) ---
+rateLimiter:
+  defaultMaxRequests: 10
+  defaultWindowMs: 60000
+  domainOverrides:
+    "example.com":
+      maxRequests: 5
+      windowMs: 60000
+
+# --- Proxy pool endpoints and health settings ---
+proxy:
+  endpoints:
+    - host: "proxy1.example.com"
+      port: 8080
+      protocol: "http"
+    - host: "proxy2.example.com"
+      port: 8080
+      protocol: "http"
+  connectTimeoutMs: 10000
+  healthCheckIntervalMs: 30000
+
+# --- Weighted user-agent rotation list ---
+userAgent:
+  agents:
+    - userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+      weight: 0.4
+      browserFamily: "Chrome"
+      browserVersion: "124.0.0.0"
+    - userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
+      weight: 0.25
+      browserFamily: "Safari"
+      browserVersion: "17.4"
+    - userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0"
+      weight: 0.2
+      browserFamily: "Firefox"
+      browserVersion: "125.0"
+    - userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+      weight: 0.15
+      browserFamily: "Chrome"
+      browserVersion: "124.0.0.0"
+
+# --- Retry policy with backoff and per-site overrides ---
+retry:
+  globalMaxRetries: 3
+  globalBackoffType: "EXPONENTIAL"
+  globalBaseDelayMs: 1000
+  globalJitterRangeMs:
+    min: 100
+    max: 500
+  perSiteOverrides:
+    "example.com":
+      maxRetries: 5
+      backoffType: "LINEAR"
+      baseDelayMs: 2000
+      jitterRangeMs:
+        min: 200
+        max: 800
+
+# --- Human-like interaction delay ranges (milliseconds) ---
+humanBehavior:
+  initialDelayRange:
+    min: 1000
+    max: 5000
+  keystrokeDelayRange:
+    min: 50
+    max: 200
+  scrollPauseRange:
+    min: 300
+    max: 1500
+  interActionDelayRange:
+    min: 500
+    max: 3000
+
+# --- Browser fingerprint stealth configuration ---
+stealth:
+  viewports:
+    - width: 1920
+      height: 1080
+    - width: 1366
+      height: 768
+    - width: 1536
+      height: 864
+    - width: 1440
+      height: 900
+  timezones:
+    - "America/New_York"
+    - "America/Chicago"
+    - "America/Los_Angeles"
+    - "Europe/London"
+  languages:
+    - "en-US"
+    - "en-GB"
+    - "en-CA"
+  platforms:
+    - "Win32"
+    - "MacIntel"
+    - "Linux x86_64"
+  webglVendors:
+    - "Google Inc. (NVIDIA)"
+    - "Google Inc. (Intel)"
+    - "Google Inc. (AMD)"
+  webglRenderers:
+    - "ANGLE (NVIDIA GeForce GTX 1080 Direct3D11 vs_5_0)"
+    - "ANGLE (Intel HD Graphics 630 Direct3D11 vs_5_0)"
+    - "ANGLE (AMD Radeon RX 580 Direct3D11 vs_5_0)"
+
+# --- Per-domain circuit breaker settings ---
+circuitBreaker:
+  defaultFailureThreshold: 5
+  defaultCooldownMs: 60000
+  domainOverrides:
+    "example.com":
+      failureThreshold: 3
+      cooldownMs: 120000
+
+# --- Session warmup with benign URLs ---
+warmup:
+  urls:
+    - "https://www.wikipedia.org"
+    - "https://www.google.com"
+    - "https://www.github.com"
+  minPages: 1
+  maxPages: 3
+  pageTimeoutMs: 15000
+
+# --- Webhook delivery settings ---
+webhook:
+  hmacSecret: "change-me-in-production"
+  maxRetries: 3
+  baseDelayMs: 1000
+
+# --- Metrics reporting intervals ---
+metrics:
+  reportingIntervalMs: 30000
+  slidingWindowMs: 300000
+
+# --- Graceful shutdown ---
+shutdown:
+  gracePeriodSeconds: 30
+
+# --- Scraper auto-discovery package ---
+scraperRegistry:
+  scanPackage: "com.tengus.scraper.sites"
