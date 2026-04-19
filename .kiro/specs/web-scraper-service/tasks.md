@@ -6,7 +6,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
 
 ## Tasks
 
-- [ ] 1. Project scaffolding and core data models
+- [x] 1. Project scaffolding and core data models
   - [x] 1.1 Set up Gradle Kotlin project structure
     - Create `build.gradle.kts` with dependencies: Playwright (`com.microsoft.playwright`), RabbitMQ (`com.rabbitmq:amqp-client`), Jackson (`com.fasterxml.jackson.module:jackson-module-kotlin`, `com.fasterxml.jackson.datatype:jackson-datatype-jsr310`), Kotest (`io.kotest:kotest-runner-junit5`, `io.kotest:kotest-property`), SnakeYAML (`org.yaml:snakeyaml`), Kotlin reflection (`org.jetbrains.kotlin:kotlin-reflect`), and SLF4J/Logback for logging
     - Create `settings.gradle.kts` with project name `tengus`
