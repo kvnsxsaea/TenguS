@@ -259,7 +259,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - All metrics include UTC timestamp and metric type identifier
     - _Requirements: 19.1, 19.2, 19.3, 19.4, 19.5, 19.6, 19.7, 20.7, 27.7_
 
-  - [~] 12.2 Write unit tests for `MetricsCollector`
+  - [x] 12.2 Write unit tests for `MetricsCollector`
     - Test each metric type emits correct JSON structure
     - Test rolling rate computation
     - Test metric JSON round-trip serialization
