@@ -80,7 +80,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - _Requirements: 12.1, 12.2, 12.4, 12.5_
 
 - [ ] 4. Proxy Pool and Proxy Health Monitor
-  - [~] 4.1 Implement `ProxyHealthMonitor`
+  - [x] 4.1 Implement `ProxyHealthMonitor`
     - Create `com.tengus.proxy.ProxyHealthMonitor` class
     - Track success/failure counts per proxy per domain over sliding window
     - Implement `classifyBlockingSignal` for HTTP 403, CAPTCHA, connection reset detection
