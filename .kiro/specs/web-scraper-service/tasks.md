@@ -122,7 +122,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test bot detection patch scripts are well-formed
     - _Requirements: 6.5, 8.1, 8.2, 8.3_
 
-- [~] 6. Checkpoint — Ensure all tests pass
+- [x] 6. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Human Behavior Engine, Session Manager, and Session Warmup Engine
