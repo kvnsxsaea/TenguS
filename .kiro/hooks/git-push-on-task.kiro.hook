@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Git Push on Task Complete",
   "description": "Automatically stages, commits, and pushes all changes after a spec task is marked as completed.",
   "version": "1",

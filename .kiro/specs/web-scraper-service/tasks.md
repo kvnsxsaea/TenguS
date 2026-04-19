@@ -269,7 +269,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 14. Scraper Controller and RabbitMQ integration
-  - [~] 14.1 Implement `ScraperController` — message consumption and job dispatch
+  - [x] 14.1 Implement `ScraperController` — message consumption and job dispatch
     - Create `com.tengus.controller.ScraperController` class
     - Implement `start()` that connects to RabbitMQ and begins consuming from jobs queue (FIFO, one at a time)
     - Implement `handleMessage` that deserializes `ScrapeJob` from JSON; reject and log on deserialization failure
