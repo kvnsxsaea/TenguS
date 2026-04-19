@@ -52,7 +52,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
 - [x] 2. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 3. User Agent Rotator and Rate Limiter
+- [x] 3. User Agent Rotator and Rate Limiter
   - [x] 3.1 Implement `UserAgentRotator`
     - Create `com.tengus.stealth.UserAgentRotator` class
     - Implement weighted-random selection from configured user-agent list
