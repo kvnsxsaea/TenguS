@@ -318,7 +318,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log health status (RabbitMQ connection, registered scraper count) at configurable interval
     - _Requirements: 16.1, 17.3, 24.1_
 
-  - [~] 15.2 Write integration tests for end-to-end job flow
+  - [x] 15.2 Write integration tests for end-to-end job flow
     - Test full lifecycle: enqueue job → consume → dispatch → extract → normalize → publish result
     - Test retry and DLQ flow end-to-end
     - Test webhook dispatch on success and failure
