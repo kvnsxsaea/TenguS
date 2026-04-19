@@ -1,8 +1,10 @@
 package com.tengus.result
 
+import com.fasterxml.jackson.module.kotlin.readValue
 import com.tengus.model.NormalizedScrapeResult
 import com.tengus.model.ScrapeJob
 import com.tengus.model.ScrapeResult
+import com.tengus.serialization.JsonMapper
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.collections.shouldContain
 import io.kotest.matchers.shouldBe
@@ -143,5 +145,12 @@ class ResultNormalizerTest : FunSpec({
 
         validation.valid shouldBe false
         validation.errors.size shouldBe 5
+    }
+
+    test("NormalizedScrapeResult JSON round-trip produces equivalent object") {
+        val normalized = normalizer.normalize(result, job)
+        val json = JsonMapper.mapper.writeValueAsString(normalized)
+        val deserialized: NormalizedScrapeResult = JsonMapper.mapper.readValue(json)
+        deserialized shouldBe normalized
     }
 })

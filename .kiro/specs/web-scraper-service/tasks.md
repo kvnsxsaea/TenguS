@@ -239,7 +239,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log delivery failure with job ID, callback URL, and final HTTP status after all retries exhausted
     - _Requirements: 26.2, 26.3, 26.4, 26.5, 26.6_
 
-  - [~] 11.3 Write unit tests for `ResultNormalizer` and `WebhookDispatcher`
+  - [x] 11.3 Write unit tests for `ResultNormalizer` and `WebhookDispatcher`
     - Test normalization produces correct schema fields
     - Test validation rejects incomplete results
     - Test `NormalizedScrapeResult` JSON round-trip
