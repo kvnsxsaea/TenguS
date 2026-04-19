@@ -143,7 +143,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Ensure no cookie/session data leaks between concurrent jobs
     - _Requirements: 13.1, 13.2, 13.3, 13.4_
 
-  - [~] 7.3 Implement `SessionWarmupEngine`
+  - [x] 7.3 Implement `SessionWarmupEngine`
     - Create `com.tengus.session.SessionWarmupEngine` class
     - Implement `warmup` that navigates to random subset of configured benign URLs (between min and max count)
     - Use `HumanBehaviorEngine` for human-like interactions on warmup pages
