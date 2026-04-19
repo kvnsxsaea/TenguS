@@ -285,7 +285,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Integrate circuit breaker: reject jobs for open-state domains (re-enqueue with delay), allow single job in half-open, record success/failure
     - _Requirements: 3.3, 15.1, 15.2, 15.3, 15.4, 20.1, 20.2, 21.3, 21.5, 22.2, 22.3_
 
-  - [~] 14.3 Implement `ScraperController` — result publishing, webhooks, and DLQ management
+  - [x] 14.3 Implement `ScraperController` — result publishing, webhooks, and DLQ management
     - Implement `publishResult` that serializes `NormalizedScrapeResult` and publishes to results queue
     - Integrate `WebhookDispatcher`: dispatch result to callback URL if present; dispatch failure notification on final failure if callback URL present
     - Implement `listDeadLetterMessages`, `replayDeadLetterMessage` (reset retry count to zero), `purgeDeadLetterMessage`
