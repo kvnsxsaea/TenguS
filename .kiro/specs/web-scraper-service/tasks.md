@@ -98,7 +98,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement periodic re-check of unhealthy proxies
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5_
 
-  - [~] 4.3 Write unit tests for `ProxyHealthMonitor` and `ProxyPool`
+  - [x] 4.3 Write unit tests for `ProxyHealthMonitor` and `ProxyPool`
     - Test blocking signal classification
     - Test failure rate threshold triggers block
     - Test proxy rotation consecutive-different guarantee
