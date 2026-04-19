@@ -116,7 +116,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement canvas fingerprint noise injection
     - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 8.1, 8.2, 8.3_
 
-  - [~] 5.2 Write unit tests for `StealthManager`
+  - [x] 5.2 Write unit tests for `StealthManager`
     - Test fingerprint profile generation produces consistent attribute sets
     - Test header normalization matches user-agent family
     - Test bot detection patch scripts are well-formed
