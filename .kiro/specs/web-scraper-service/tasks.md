@@ -247,7 +247,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test webhook retry logic on failure responses
     - _Requirements: 25.1, 25.2, 25.3, 25.5, 26.3, 26.4_
 
-- [ ] 12. Metrics Collector
+- [x] 12. Metrics Collector
   - [x] 12.1 Implement `MetricsCollector`
     - Create `com.tengus.metrics.MetricsCollector` class
     - Implement `emitSuccess` that writes structured JSON to stdout with job ID, site ID, duration, status, and UTC timestamp
