@@ -195,7 +195,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Propagate exceptions to caller after cleanup
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 18.2_
 
-  - [~] 10.2 Implement `ScraperRegistry`
+  - [x] 10.2 Implement `ScraperRegistry`
     - Create `com.tengus.scraper.ScraperRegistry` class
     - Implement `discover()` using Kotlin reflection to scan configurable package for `BaseScraper` subclasses
     - Implement `register`, `lookup`, `registeredSiteIds`
