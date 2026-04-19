@@ -168,7 +168,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log all state transitions at WARN level with domain and failure count
     - _Requirements: 21.1, 21.2, 21.3, 21.4, 21.5, 21.6, 21.7, 21.8, 21.9_
 
-  - [~] 8.2 Implement `RetryPolicyResolver`
+  - [x] 8.2 Implement `RetryPolicyResolver`
     - Create `com.tengus.resilience.RetryPolicyResolver` class with `RetryStrategy` data class and `BackoffType` enum (FIXED, LINEAR, EXPONENTIAL)
     - Implement `resolve(siteId)` that returns site-specific strategy or global fallback
     - Implement `computeDelay` with fixed/linear/exponential backoff plus jitter
