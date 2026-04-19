@@ -73,7 +73,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Support per-domain config overrides with global default fallback
     - _Requirements: 12.1, 12.2, 12.3, 12.4, 12.5_
 
-  - [~] 3.4 Write unit tests for `RateLimiter`
+  - [x] 3.4 Write unit tests for `RateLimiter`
     - Test sliding window correctly limits requests
     - Test per-domain overrides vs global defaults
     - Test blocking behavior when rate exceeded
