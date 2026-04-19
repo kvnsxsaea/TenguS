@@ -106,7 +106,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test proxy restoration after cooldown
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5, 27.1, 27.2, 27.3, 27.4, 27.5_
 
-- [ ] 5. Stealth Manager
+- [x] 5. Stealth Manager
   - [x] 5.1 Implement `StealthManager`
     - Create `com.tengus.stealth.StealthManager` class
     - Implement `generateFingerprintProfile` with randomized viewport, timezone, language, platform, WebGL values — all internally consistent with selected user-agent
