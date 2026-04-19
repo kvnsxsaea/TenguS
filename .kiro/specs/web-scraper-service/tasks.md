@@ -185,7 +185,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
 - [x] 9. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. Base Scraper and Scraper Registry
+- [x] 10. Base Scraper and Scraper Registry
   - [x] 10.1 Implement `BaseScraper` abstract class
     - Create `com.tengus.scraper.BaseScraper` abstract class
     - Define abstract `siteId` property and abstract `extract(page, job)` method
