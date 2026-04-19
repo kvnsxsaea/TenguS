@@ -65,7 +65,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test single-agent edge case
     - _Requirements: 9.1, 9.2, 9.3_
 
-  - [~] 3.3 Implement `RateLimiter`
+  - [x] 3.3 Implement `RateLimiter`
     - Create `com.tengus.ratelimit.RateLimiter` class
     - Implement sliding window algorithm tracking request timestamps per domain
     - Implement `acquire(domain)` that blocks until permit available
