@@ -20,7 +20,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement startup validation: fail with descriptive error if required config keys are missing or invalid
     - _Requirements: 16.1, 16.2, 16.3, 16.4_
 
-  - [~] 1.3 Implement core domain data models
+  - [x] 1.3 Implement core domain data models
     - Create `com.tengus.model` package with: `ScrapeJob`, `ScrapeResult`, `NormalizedScrapeResult`, `DeadLetterEntry`, `JobFailureNotification`, `ValidationResult`
     - _Requirements: 2.1, 2.2, 2.3, 14.2_
 
