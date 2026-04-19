@@ -1,26 +1,8 @@
 package com.tengus.config
 
-/**
- * Placeholder types for domain models referenced by configuration.
- * These will be moved to their proper packages in later tasks.
- */
-
-data class ProxyEndpoint(
-    val host: String,
-    val port: Int,
-    val username: String? = null,
-    val password: String? = null,
-    val protocol: String = "http"
-)
-
-data class WeightedUserAgent(
-    val userAgent: String,
-    val weight: Double,
-    val browserFamily: String,
-    val browserVersion: String
-)
-
-data class ViewportSize(val width: Int, val height: Int)
+import com.tengus.model.ProxyEndpoint
+import com.tengus.model.ViewportSize
+import com.tengus.model.WeightedUserAgent
 
 enum class BackoffType { FIXED, LINEAR, EXPONENTIAL }
 

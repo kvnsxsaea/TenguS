@@ -1,5 +1,8 @@
 package com.tengus.config
 
+import com.tengus.model.ProxyEndpoint
+import com.tengus.model.ViewportSize
+import com.tengus.model.WeightedUserAgent
 import org.yaml.snakeyaml.Yaml
 import java.io.File
 import java.io.FileNotFoundException

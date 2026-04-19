@@ -24,7 +24,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create `com.tengus.model` package with: `ScrapeJob`, `ScrapeResult`, `NormalizedScrapeResult`, `DeadLetterEntry`, `JobFailureNotification`, `ValidationResult`
     - _Requirements: 2.1, 2.2, 2.3, 14.2_
 
-  - [~] 1.4 Implement stealth and proxy data models
+  - [x] 1.4 Implement stealth and proxy data models
     - Create `FingerprintProfile`, `ViewportSize`, `WeightedUserAgent` in `com.tengus.model`
     - Create `ProxyEndpoint`, `BlockingSignal` enum in `com.tengus.model`
     - _Requirements: 6.1, 6.2, 6.3, 9.1, 10.1_
