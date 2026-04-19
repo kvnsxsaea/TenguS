@@ -292,7 +292,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Emit success/failure metrics via `MetricsCollector`
     - _Requirements: 3.4, 14.1, 14.5, 20.3, 20.4, 20.5, 20.6, 26.2, 26.6_
 
-  - [~] 14.4 Implement graceful shutdown
+  - [x] 14.4 Implement graceful shutdown
     - Register JVM shutdown hook for SIGTERM/SIGINT
     - Stop consuming new messages on signal
     - Wait for in-flight jobs to complete within configurable grace period
@@ -300,7 +300,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log in-flight count and grace period at INFO on shutdown start; log shutdown-complete at INFO on exit
     - _Requirements: 23.1, 23.2, 23.3, 23.4, 23.5, 23.6_
 
-  - [~] 14.5 Write unit tests for `ScraperController`
+  - [x] 14.5 Write unit tests for `ScraperController`
     - Test message deserialization success and failure paths
     - Test retry logic with incremented count and backoff
     - Test DLQ routing after max retries
