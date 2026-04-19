@@ -175,7 +175,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Validate all per-site retry config at startup
     - _Requirements: 15.1, 15.2, 15.3, 22.1, 22.2, 22.3, 22.4, 22.5, 22.6_
 
-  - [~] 8.3 Write unit tests for `CircuitBreakerManager` and `RetryPolicyResolver`
+  - [x] 8.3 Write unit tests for `CircuitBreakerManager` and `RetryPolicyResolver`
     - Test full circuit breaker state machine transitions
     - Test per-domain overrides vs global defaults
     - Test exponential backoff delay computation with jitter
