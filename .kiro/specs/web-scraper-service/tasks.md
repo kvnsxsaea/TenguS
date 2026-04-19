@@ -59,7 +59,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Implement consecutive-different guarantee per domain (track last-used per domain)
     - _Requirements: 9.1, 9.2, 9.3_
 
-  - [~] 3.2 Write unit tests for `UserAgentRotator`
+  - [x] 3.2 Write unit tests for `UserAgentRotator`
     - Test weighted-random selection distribution
     - Test consecutive-different guarantee when multiple agents available
     - Test single-agent edge case
