@@ -33,7 +33,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create `com.tengus.metrics` package with: `SuccessMetric`, `FailureMetric`, `RollingRateMetric`, `QueueDepthMetric`, `AverageDurationMetric`, `ProxyHealthMetric`
     - _Requirements: 19.1, 19.2, 19.3, 19.4, 19.5, 19.6_
 
-  - [~] 1.6 Configure Jackson ObjectMapper
+  - [x] 1.6 Configure Jackson ObjectMapper
     - Create `com.tengus.serialization.JsonMapper` singleton with `JavaTimeModule`, `FAIL_ON_UNKNOWN_PROPERTIES = false`, `WRITE_DATES_AS_TIMESTAMPS = false`, and Kotlin module registered
     - _Requirements: 2.1, 2.2, 2.3, 14.1, 14.3_
 
