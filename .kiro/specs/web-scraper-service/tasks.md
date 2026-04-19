@@ -29,7 +29,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Create `ProxyEndpoint`, `BlockingSignal` enum in `com.tengus.model`
     - _Requirements: 6.1, 6.2, 6.3, 9.1, 10.1_
 
-  - [~] 1.5 Implement metrics output data models
+  - [x] 1.5 Implement metrics output data models
     - Create `com.tengus.metrics` package with: `SuccessMetric`, `FailureMetric`, `RollingRateMetric`, `QueueDepthMetric`, `AverageDurationMetric`, `ProxyHealthMetric`
     - _Requirements: 19.1, 19.2, 19.3, 19.4, 19.5, 19.6_
 
