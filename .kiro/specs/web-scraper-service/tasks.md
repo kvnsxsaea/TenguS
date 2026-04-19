@@ -222,7 +222,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test factory creates scraper with correct dependencies
     - _Requirements: 4.2, 4.3, 24.1, 24.4_
 
-- [ ] 11. Result Normalizer and Webhook Dispatcher
+- [x] 11. Result Normalizer and Webhook Dispatcher
   - [x] 11.1 Implement `ResultNormalizer`
     - Create `com.tengus.result.ResultNormalizer` class
     - Implement `normalize` that transforms `ScrapeResult` into `NormalizedScrapeResult` with source URL, site ID, job ID, extraction timestamp, scraper version, and normalized data payload
