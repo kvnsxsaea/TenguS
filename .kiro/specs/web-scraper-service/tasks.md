@@ -182,7 +182,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Test site-specific vs global retry strategy resolution
     - _Requirements: 21.1, 21.2, 21.4, 21.6, 21.7, 22.2, 22.3, 22.4, 22.5_
 
-- [~] 9. Checkpoint — Ensure all tests pass
+- [x] 9. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 10. Base Scraper and Scraper Registry
