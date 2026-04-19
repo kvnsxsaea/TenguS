@@ -210,7 +210,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Throw descriptive error for unregistered site identifiers
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 24.6_
 
-  - [~] 10.4 Create an example `SiteScraper` implementation
+  - [x] 10.4 Create an example `SiteScraper` implementation
     - Create `com.tengus.scraper.sites.ExampleSiteScraper` extending `BaseScraper`
     - Implement `siteId` and `extract` method as a reference implementation
     - _Requirements: 4.5, 5.1_
