@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeMdcKeyName>jobId</includeMdcKeyName>
+            <includeMdcKeyName>component</includeMdcKeyName>
+            <includeMdcKeyName>errorType</includeMdcKeyName>
+            <timestampPattern>yyyy-MM-dd'T'HH:mm:ss.SSS'Z'</timestampPattern>
+            <timeZone>UTC</timeZone>
+        </encoder>
+    </appender>
+
+    <!-- Rate limiter delays at DEBUG -->
+    <logger name="com.tengus.ratelimit.RateLimiter" level="DEBUG" />
+
+    <!-- Proxy health changes at WARN -->
+    <logger name="com.tengus.proxy.ProxyPool" level="WARN" />
+    <logger name="com.tengus.proxy.ProxyHealthMonitor" level="WARN" />
+
+    <!-- Circuit breaker transitions at WARN -->
+    <logger name="com.tengus.resilience.CircuitBreakerManager" level="WARN" />
+
+    <!-- Default: INFO for all tengus components -->
+    <logger name="com.tengus" level="INFO" />
+
+    <root level="WARN">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

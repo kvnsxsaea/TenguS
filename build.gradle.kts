@@ -38,6 +38,7 @@ dependencies {
     // Logging
     implementation("org.slf4j:slf4j-api:$slf4jVersion")
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
+    implementation("net.logstash.logback:logstash-logback-encoder:8.0")
 
     // Testing
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")

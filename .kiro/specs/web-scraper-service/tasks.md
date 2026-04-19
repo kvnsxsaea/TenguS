@@ -325,7 +325,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - _Requirements: 3.2, 3.4, 14.1, 14.5, 25.6, 26.2_
 
 - [ ] 16. Structured logging setup
-  - [~] 16.1 Configure Logback with structured JSON logging
+  - [x] 16.1 Configure Logback with structured JSON logging
     - Create `src/main/resources/logback.xml` with JSON encoder for structured log output
     - Ensure all components use SLF4J logger with structured fields (job ID, component name, error type)
     - Verify rate limiter logs delays at DEBUG, proxy health changes at WARN, circuit breaker transitions at WARN, errors with structured JSON
