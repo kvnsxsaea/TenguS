@@ -89,7 +89,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - Log block and restoration events at WARN level
     - _Requirements: 27.1, 27.2, 27.3, 27.4, 27.5, 27.6_
 
-  - [~] 4.2 Implement `ProxyPool`
+  - [x] 4.2 Implement `ProxyPool`
     - Create `com.tengus.proxy.ProxyPool` class
     - Implement proxy selection with rotation (consecutive-different per domain)
     - Implement `markUnhealthy` / `restoreProxy` lifecycle
