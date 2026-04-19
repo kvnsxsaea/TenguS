@@ -160,7 +160,7 @@ Scaffold a Kotlin project from scratch and implement the TenguS web scraper serv
     - _Requirements: 11.1, 11.2, 11.3, 11.5, 13.4, 28.4, 28.5, 28.6_
 
 - [ ] 8. Circuit Breaker Manager and Retry Policy Resolver
-  - [~] 8.1 Implement `CircuitBreakerManager`
+  - [x] 8.1 Implement `CircuitBreakerManager`
     - Create `com.tengus.resilience.CircuitBreakerManager` class with `CircuitState` enum (CLOSED, OPEN, HALF_OPEN)
     - Track consecutive failure count per domain
     - Implement state transitions: CLOSED→OPEN when failures exceed threshold, OPEN→HALF_OPEN after cooldown, HALF_OPEN→CLOSED on success, HALF_OPEN→OPEN on failure
